@@ -1,6 +1,8 @@
 .gallery{
     display: flex;
-    align-items: flex-start;
-    flex-direction: row;
-    background-color: aqua;
+    align-items: center;
+    flex-direction: column-reverse;
+    background-color: orange;
+    border: 5px solid lightblue;
+    border-radius: 90px;
 }

@@ -50,7 +50,7 @@ const ingredients = [
    ];
 
    const galleryElment = document.querySelector("ul#gallery")
-   galleryElment.classList.add(".gallery")
+   galleryElment.classList.add("gallery")
 
 
    images.forEach(element => {
@@ -63,3 +63,20 @@ const ingredients = [
     item.append(photo)
     galleryElment.append(item)
    })
+
+//    4
+
+let counterElement = document.querySelector("#value")
+let counterValue = Number(counterElement.textContent)
+const decrementButton = document.querySelector('[data-action="decrement"]')
+const incrementButton = document.querySelector('[data-action="increment"]')
+
+incrementButton.addEventListener("click", () => {
+    counterValue += 1;
+    counterElement.textContent = counterValue;
+});
+
+decrementButton.addEventListener("click", () => {
+    counterValue -= 1;
+    counterElement.textContent = counterValue; 
+});
